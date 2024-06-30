@@ -1653,12 +1653,15 @@ button.mfp-close:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  visibility: hidden;
-  opacity: 0;
-  margin-bottom: -6px;
+  visibility: visible;
+  opacity: 1;
+  margin-bottom: 0px;
   padding: 0 30px 24px;
   -webkit-transition: ease-out 0.16s;
   transition: ease-out 0.16s;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  padding: 0.5em 1em;
 }
 
 .portfolio-box .portfolio-caption * {
@@ -1675,6 +1678,7 @@ button.mfp-close:hover {
 
 .portfolio-box .portfolio-caption *:hover {
   text-shadow: 0 0 white;
+  color: white;
 }
 
 .portfolio-box:hover:after {
@@ -1692,6 +1696,8 @@ button.mfp-close:hover {
   visibility: visible;
   opacity: 1;
   margin-bottom: 0;
+  text-shadow: 0 0 white;
+  color: white;
 }
 
 body:after {
