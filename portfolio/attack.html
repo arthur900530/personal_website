@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="">
 		<meta name="keywords" content="">
-		<title>Project - Bomb Lab</title>
+		<title>Project - Attack Lab</title>
 		<!-- Favicon -->
 		<link href="../assets/images/favicon.png" rel="shortcut icon">
 		<!-- CSS -->
@@ -132,7 +132,7 @@
 								</div>
 								<div class="col-12 col-xl-3">
 									<h6 class="mono-heading mb-0">Time Spent:</h6>
-									<p>30 hours</p>
+									<p>20 hours</p>
 								</div>
 								<div class="col-12 col-xl-4">
 									<h6 class="mono-heading mb-0">Source Code:</h6>
@@ -140,41 +140,42 @@
 								</div>
 							</div><!-- end row -->
 							<div class="mt-4">
-								<h1>Bomb Lab</h1>
-								<p> The Bomb Lab required me to defuse a binary bomb, a program composed of multiple phases, each demanding a specific string input. Incorrect inputs would result in the bomb "exploding," thereby terminating the program and signaling failure. The task was to analyze and understand the bomb's binary and assembly code to determine the correct inputs for each phase.
-									Below I will describe the technical skills and tools I've utilized.
+								<h1>Attack Lab</h1>
+								<p> The Attack Lab was divided into five phases, each focusing on different aspects of security exploits, from basic code injection to advanced return-oriented programming (ROP). The goal was to understand how attackers exploit weaknesses in software and to gain the skills necessary to write more secure code.
+									Below I will describe the puzzles and the technical skills and tools I've utilized.
 									<br>
 									<br>
-									<h4 class="fw-medium">Advanced Debugging with gdb</h4>
+									<h4 class="fw-medium">Code Injection Attacks:</h4>
 									<ul class="list-circle">
-										<li>Utilized gdb to step through the disassembled code, set breakpoints, and inspect both memory and register states.</li>
-										<li>Developed a deep understanding of how the bomb processed inputs and learned to avoid unnecessary steps through library functions.</li>
+										<li>Phase 1: Redirected program execution to an existing function (touch1) by manipulating the return address on the stack.</li>
+										<li>Phase 2: Injected code to call another function (touch2) with a specific argument, modifying the stack to pass the correct value.</li>
+										<li>Phase 3: Injected code to call a third function (touch3) with a string argument, ensuring the string was correctly placed on the stack.</li>
 									</ul>
 									<br>
-									<h4 class="fw-medium">Code Analysis with objdump</h4>
+									<h4 class="fw-medium">Return-Oriented Programming (ROP):</h4>
 									<ul class="list-circle">
-										<li>Employed objdump -t to explore the bomb's symbol table, identifying functions and variables that were critical to the bomb's operation.</li>
-										<li>Disassembled the bomb's code using objdump -d, providing a detailed view of the assembly instructions and their interactions.</li>
+										<li>Phase 4: Used gadgets (existing instruction sequences ending in ret) from the program’s code to replicate the Phase 2 attack without injecting new code.</li>
+										<li>Phase 5: Performed a complex ROP attack to call touch3 with a string argument, using a sequence of gadgets to manipulate the stack and registers.</li>
 									</ul>
 									<br>
-									Completing the Bomb Lab significantly enhanced my skills in low-level programming, assembly language comprehension, and advanced debugging techniques. This experience not only bolstered my technical expertise but also prepared me for future challenges in computer systems and security.
+									Completing the Attack Lab has equipped me with a solid foundation in cybersecurity and low-level programming. The skills and knowledge I gained are essential for identifying and mitigating security vulnerabilities in software. This experience not only strengthened my technical abilities but also underscored the importance of writing secure and reliable code.
 								</p>
 								<br>
 								<ul class="list-inline-pills mt-3">
-									<li>Binary Analysis</li>
+									<li>Cybersecurity</li>
+									<li>Buffer Overflow Exploits</li>
+									<li>Code Injection</li>
+									<li>Return-Oriented Programming (ROP)</li>
+									<li>x86-64 Machine Code</li>
+									<li>Stack Manipulation</li>
+									<li>Programming Security</li>
 									<li>Assembly Language</li>
-									<li>Advanced Debugging</li>
-									<li>gdb</li>
-									<li>Code Disassembly</li>
-									<li>Low-Level Programming</li>
-									<li>System-Level Programming</li>
-									<li>Software Security</li>
 								</ul>
 							</div>
 							
 							<div class="row g-4 mt-2">
 								<div class="col-12">
-									<img class="border-radius" src="../assets/images/bomb_result.png" alt="">
+									<img class="border-radius" src="../assets/images/attack_result.png" alt="">
 								</div>
 								<!-- <div class="col-12 col-xl-6"> -->
 									<!-- Image Lightbox -->
