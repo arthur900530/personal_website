@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<title>Project - Proxy Lab</title>
+		<!-- Favicon -->
+		<link href="../assets/images/favicon.png" rel="shortcut icon">
+		<!-- CSS -->
+		<link href="../assets/plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+		<link href="../assets/plugins/magnific-popup/magnific-popup.min.css" rel="stylesheet">
+		<link href="../assets/plugins/swiper/swiper-bundle.min.css" rel="stylesheet">
+		<link href="../assets/css/theme.css" rel="stylesheet">
+		<!-- Fonts/Icons -->
+		<link href="../assets/plugins/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+		<link href="../assets/plugins/fontawesome/css/all.css" rel="stylesheet">
+	</head>
+	<body data-preloader="true">
+
+		<!-- Toggle Menu -->
+		<div class="toggle-menu">
+			<!-- Close button -->
+			<button class="toggle-close">
+				<i class="bi bi-x"></i>
+			</button>
+			<!-- end Close button -->
+			<h6 class="mono-heading fw-normal mb-2">Phone:</h6>
+			<h4 class="fw-medium">+(886) 909 756 966</h4>
+			<div class="mt-4">
+				<h6 class="mono-heading fw-normal mb-2">Email:</h6>
+				<h6 class="fw-medium">moneychien20639@gmail.com</h6>
+				<ul class="list-inline-sm mt-3">
+					<li>
+						<a class="button-circle button-circle-sm" href="https://www.facebook.com/profile.php?id=100006726992151"><i class="bi bi-facebook"></i></a>
+					</li>
+					<li>
+						<a class="button-circle button-circle-sm" href="https://www.instagram.com/arthurchien_/"><i class="bi bi-instagram"></i></a>
+					</li>
+					<li>
+						<a class="button-circle button-circle-sm" href="https://www.linkedin.com/in/arthur-chien-24b376207/"><i class="bi bi-linkedin"></i></a>
+					</li>
+				</ul>
+			</div>
+			<div class="mt-4 mt-lg-5">
+				<ul class="list-circle">
+					<li>
+						<a class="mono-heading link-decoration" href="https://www.youtube.com/watch?v=BSFNl4roGlI&ab_channel=Raindrop"><i class="bi bi-music-note-beamed"></i> Give it a try?</a>
+					</li>
+					<!-- <li><a class="mono-heading link-decoration" href="#">Link item</a></li> -->
+				</ul>
+			</div>
+			<div class="tm-bottom">
+				<p>&copy; 2024 Yu-Hang</p>
+			</div>
+		</div>
+		<!-- end Toggle Menu -->
+
+		<!-- Main container -->
+		<div class="container">
+
+			<!-- Header -->
+			<div id="header">
+				<div class="row">
+					<div class="col-12 col-lg-4 col-xl-3 order-lg-2 text-end">
+						<div class="d-inline-flex align-items-center">
+							<!-- Social Links -->
+							<ul class="list-inline d-inline-block mono-heading fw-medium">
+								<li>
+									<a class="link-decoration" href="resume.html">Resume</a>
+								</li>
+								<li>
+									<a class="link-decoration" href="https://github.com/arthur900530">github</a>
+								</li>
+								<li>
+									<a class="link-decoration" href="https://scholar.google.com/citations?user=lkPbczcAAAAJ&hl=zh-TW">Scholor</a>
+								</li>
+							</ul>
+							<!-- Toggle Menu Button -->
+							<button class="menu-dots">
+								<span></span>
+							</button>
+							<!-- end Toggle Menu Button -->
+						</div>
+					</div><!-- end col -->
+					<div class="col-12 col-lg-8 order-lg-1 col-xl-9">
+						<div class="py-4">
+							<h1 class="display-2 fw-semi-bold m-0">Arthur <span class="stroke-text">Chien</span></h1>
+						</div>
+					</div><!-- end col -->
+				</div><!-- end row -->
+			</div>
+			<!-- end Header -->
+			
+			<!-- Main row -->
+			<div class="row g-4 g-lg-5">
+
+				<div class="col-12 col-lg-4 col-xl-3">
+					<!-- Sections Navigation -->
+					<div class="nav-wrapper">
+						<div class="section-nav">
+							<ul class="nav">
+								<li class="nav-item">
+									<a class="nav-link" href="../index.html">
+										<span class="nav-link-desktop">Home</span>
+										<span class="nav-link-mobile">H</span>
+										<span class="nav-circle"></span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link active" href="#">
+										<span class="nav-link-desktop">Portfolio</span>
+										<span class="nav-link-mobile">P</span>
+										<span class="nav-circle"></span>
+									</a>
+								</li>
+							</ul>
+						</div><!-- end section-nav -->
+					</div><!-- end nav-wrapper -->
+					<!-- end Sections Navigation -->
+				</div><!-- end col -->
+
+				<div class="col-12 col-lg-8 col-xl-9">
+					<div class="sections-wrapper">
+						<!-- Project content -->
+						<div class="section-box">
+							<div class="row g-4">
+								<div class="col-12 col-xl-5">
+									<h6 class="mono-heading mb-0">Course:</h6>
+									<p>Introduction to Computer Systems (15-513)</p>
+								</div>
+								<div class="col-12 col-xl-3">
+									<h6 class="mono-heading mb-0">Time Spent:</h6>
+									<p>30 hours</p>
+								</div>
+								<div class="col-12 col-xl-4">
+									<h6 class="mono-heading mb-0">Source Code:</h6>
+									<a class="mono-heading mb-0" href="https://github.com/arthur900530">to github</a>
+								</div>
+							</div><!-- end row -->
+							<div class="mt-4">
+								<h1>Proxy Lab</h1>
+								<p>This program implements a simple HTTP proxy server. It accepts client requests, forwards them to the appropriate web servers, and returns the responses to the clients. The proxy handles GET requests and rewrites the headers to include required fields like User-Agent.<br>
+								   <br>
+									Key Design Decisions:<br>
+									- Multi-threaded Handling:
+									Each client request is handled by a separate thread, ensuring concurrent processing.
+									Threads are detached to automatically clean up resources after completion.
+									<br><br>
+									Request Parsing:<br>
+									Utilized a custom HTTP parser to extract important fields from HTTP requests.
+									Parsed method, host, path, and port from the client's request.
+									<br><br>
+									Header Management:<br>
+									Constructed HTTP request headers including User-Agent, Connection, and Proxy-Connection.
+									Ensured the Host header is always sent, either copied from the client or constructed as needed.
+									<br><br>
+									Forwarding Requests:<br>
+									Established a connection to the target web server, forwarded the client's request, and returned the server's response to the client.
+									Managed both request and response headers efficiently.
+									<br><br>
+									Error Handling:<br>
+									Implemented robust error handling to return appropriate HTTP error messages (e.g., 400 Bad Request, 501 Not Implemented).
+									Ensured the proxy server continues running smoothly in the face of various errors.
+									<br><br>
+									Implementation Details:<br>
+									 - Used POSIX threads to handle multiple client connections concurrently.<br>
+									 - Adopted the CSAPP robust I/O package for reliable socket communication.
+									 <br>
+									 - Employed the provided HTTP parsing library for efficient request parsing and header management.<br>
+									 - Integrated thorough testing using the PxyDrive and PxyRegress frameworks provided in the lab handout.<br>
+									<br>
+								</p>
+								<br>
+								<ul class="list-inline-pills mt-3">
+									<li>C</li>
+									<li>HTTP Proxy Server</li>
+									<li>Multi-threaded Programming</li>
+									<li>Network Programming</li>
+									<li>POSIX Threads</li>
+									<li>Socket Programming</li>
+									<li>Concurrent Processing</li>
+									<li>Error Handling</li>
+								</ul>
+							</div>
+							
+							<div class="row g-4 mt-2">
+								<div class="col-12">
+									<img class="border-radius" src="../assets/images/proxy_result.png" alt="">
+								</div>
+								<!-- <div class="col-12 col-xl-6"> -->
+									<!-- Image Lightbox -->
+									<!-- <a class="lightbox-image-box border-radius" href="../assets/images/col-1.jpg">
+										<img src="assets/images/col-1.jpg" alt="">
+										<i class="bi bi-arrows-fullscreen"></i>
+									</a>
+								</div>
+								<div class="col-12 col-xl-6"> -->
+									<!-- Video Lightbox -->
+									<!-- <a class="lightbox-media-box border-radius icon-lg" href="https://www.youtube.com/watch?v=W-j4QGAgNu8">
+										<img src="../assets/images/col-1.jpg" alt="">
+										<i class="bi bi-play"></i>
+									</a>
+								</div> -->
+							</div><!-- end row -->
+						</div><!-- end section-box -->
+						<!-- end Project Content -->
+					</div>
+				</div><!-- end col -->
+			</div><!-- end main row -->
+
+		</div><!-- end main container -->
+
+		<!-- Background Vertical lines -->
+		<div class="bg-lines">
+			<div class="bg-line-1"></div>
+			<div class="bg-line-2"></div>
+			<div class="bg-line-3"></div>
+			<div class="bg-line-4"></div>
+		</div>
+		<!-- end Background Vertical lines -->
+
+		<!-- JavaScripts -->
+		<script src="../assets/plugins/jquery.min.js"></script>
+		<script src="../assets/plugins/plugins.js"></script>
+		<script src="../assets/js/functions.js"></script>
+	</body>
+</html>
