@@ -128,73 +128,61 @@
                             <div class="row g-4">
                               <div class="col-12 col-xl-5">
                                 <h6 class="mono-heading mb-0">Course:</h6>
-                                <p>Introduction to Deep Learning (11-785)</p>
+                                <p>Machine Learning in Production (17-645)</p>
                               </div>
                               <div class="col-12 col-xl-3">
                                 <h6 class="mono-heading mb-0">Time Spent:</h6>
-                                <p>-- hours</p>
+                                <p>50+ hours</p>
                               </div>
                               <div class="col-12 col-xl-4">
                                 <h6 class="mono-heading mb-0">Source Code:</h6>
-                                <a class="mono-heading mb-0" href="https://github.com/arthur900530">to github</a>
+                                <a class="mono-heading mb-0" href="https://github.com/cmu-seai/group-project-s25-the-reel-deal" target="_blank">to github</a>
                               </div>
                             </div>
                             <div class="mt-4">
-                              <h1>Safeguarding Diffusion Models: Embedding Space Distortion for NSFW Defense</h1>
+                              <h1>Scalable Movie Recommendation System with Monitoring and Continuous Deployment</h1>
                               <br>
-                              <p>
-                                We re-implemented and extended the DES (Distorting Embedding Space) framework to defend against adversarial NSFW prompts in text-to-image models like Stable Diffusion. Our improvements preserve generation quality while strengthening safety through targeted text encoder fine-tuning.
-                              </p>
-                              <br>
-                          
-                              <h4 class="fw-medium">Core Contributions:</h4>
                               <ul class="list-circle">
-                                <li>Reproduced DES with fine-tuned CLIP text encoder for zero-overhead inference safety.</li>
-                                <li>Introduced five new loss terms including Multi-Concept Neutralization, Distribution Matching (MMD), and Harm Concept Repulsion.</li>
-                                <li>Achieved lower FID (16.98), higher CLIP score (30.6), and near-baseline ASR (0.33%) with MMD + push_harm configuration.</li>
+                                <li><strong>Built</strong> a scalable movie recommendation system for 1M+ users using Kafka for real-time data ingestion, MongoDB for persistent storage, and RESTful API microservices containerized with Docker and deployed via Kubernetes.</li>
+                                <li><strong>Automated</strong> model retraining and redeployment every 48 hours via Jenkins pipelines, using MLflow for experiment tracking and model versioning.</li>
+                                <li><strong>Monitored</strong> key system metrics using Prometheus and Grafana, including click-through rate (CTR), request latency, and anomaly alerts.</li>
+                                <li><strong>Conducted</strong> online A/B testing with Minikube for isolated environments, tracking CTR in real-time and testing for significance with Z-tests.</li>
                               </ul>
                               <br>
                           
-                              <h4 class="fw-medium">Key Techniques:</h4>
+                              <h4 class="fw-medium">System Highlights:</h4>
                               <ul class="list-circle">
-                                <li>CLIP ViT-L/14 embedding manipulation via loss-based distortion (UEN, SEP, NEN, MCN).</li>
-                                <li>Orthogonal repulsion to separate harmful embeddings in latent space.</li>
-                                <li>Distribution alignment between unsafe and safe embeddings using MMD.</li>
+                                <li>NCF model enhanced with dropout, batch normalization, and learnable scaling.</li>
+                                <li>Microservice architecture included data buffer, model service, monitoring agent, and rating drift detector.</li>
+                                <li>CTR and rating drift logs were streamed to Kafka, enabling dynamic analytics dashboards.</li>
+                                <li>Security and fairness audits identified rating manipulation and demographic bias in recommendations.</li>
                               </ul>
                               <br>
                           
-                              <h4 class="fw-medium">Results:</h4>
+                              <h4 class="fw-medium">Outcomes:</h4>
                               <ul class="list-circle">
-                                <li><strong>Baseline:</strong> FID 21.86, CLIP 28.52, ASR 0.31%</li>
-                                <li><strong>MMD:</strong> FID 17.98, CLIP 30.57, ASR 0.41%</li>
-                                <li><strong>MMD + push_harm:</strong> FID 16.98, CLIP 30.6, ASR 0.33%</li>
+                                <li>Achieved statistically significant CTR uplift over baseline models.</li>
+                                <li>Built a robust versioning and retraining loop for real-world deployment readiness.</li>
+                                <li>Demonstrated full-stack ML Ops skills from data ingestion to metrics-based alerting.</li>
                               </ul>
                               <br>
-                          
-                              <h4 class="fw-medium">Impact:</h4>
-                              <p>
-                                This project showed that embedding-level defenses like DES can be significantly enhanced with distribution-aware and concept-repelling techniques, leading to safer generation without sacrificing image quality.
-                              </p>
                           
                               <ul class="list-inline-pills mt-3">
-                                <li>Diffusion Models</li>
-                                <li>NSFW Defense</li>
-                                <li>CLIP</li>
-                                <li>Stable Diffusion</li>
-                                <li>DES</li>
-                                <li>Contrastive Learning</li>
-                                <li>MMD</li>
-                                <li>Prompt Safety</li>
-                                <li>Text-to-Image</li>
+                                <li>Recommendation Systems</li>
+                                <li>Kafka</li>
+                                <li>Docker</li>
+                                <li>Kubernetes</li>
+                                <li>MongoDB</li>
+                                <li>Prometheus</li>
+                                <li>Grafana</li>
+                                <li>MLflow</li>
+                                <li>Jenkins</li>
+                                <li>A/B Testing</li>
+                                <li>CTR Monitoring</li>
+                                <li>NCF</li>
                               </ul>
                             </div>
-                            <div class="row g-4 mt-2">
-                                <div class="col-12">
-									<!-- <img class="border-radius" src="../assets/images/attack_result.png" alt=""> -->
-									<iframe src="paper/IDL_Report.pdf" width="100%" height="800px"></iframe>
-								</div>
-							</div><!-- end row -->
-                          </div>                                                   
+                          </div>                                                                             
 						<!-- end Project Content -->
 					</div>
 				</div><!-- end col -->
